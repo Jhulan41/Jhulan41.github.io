@@ -76,3 +76,74 @@ const skillsContent = document.getElementsByClassName('skills_content'),
             tab.classList.add('qualification_active');
         })
     })
+
+
+    /*=========================service model =======================*/
+
+    const modelViews = document.querySelectorAll('.services_model'),
+          modelBtns  = document.querySelectorAll('.services_button'),
+          modelCloses = document.querySelectorAll('.services_model-close')
+
+
+    let model = function(modelClick){
+        modelViews[modelClick].classList.add('active-model')
+    }
+
+    modelBtns.forEach((modelBtn,i)=>{
+        modelBtn.addEventListener('click', ()=>{
+            model(i)
+        })
+
+    })
+
+    modelCloses.forEach((modelClose)=>{
+        modelClose.addEventListener('click', ()=>{
+            modelViews.forEach((modelView)=>{
+                modelView.classList.remove('active-model')
+            })
+        })
+
+    })
+
+
+    /*================== ===========portfolio swiper=========================*/
+
+    let swiper = new Swiper('.portfolio_container', {
+        cssMode:true,
+        loop:true,
+
+        navigation: {
+
+            nextEl:'.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination:{
+            el:'.swiper-pagination',
+            clickable:true,
+        },
+    });
+
+    /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
+    const sections = document.querySelectorAll('section[id]')
+
+
+    function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        let sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+
+    window.addEventListener('scroll', scrollActive)
+
