@@ -23,6 +23,9 @@
     --input-color:hsl(var(--hue-color), 70%, 96%);
     --body-color:hsl(var(--hue-color), 60%, 99%);
     --container-color:#FFF;
+    --scroll-bar-color:hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color:hsl(var(--hue-color), 12%, 80%);
+
     
     /* ==============font & typography============= */
 
@@ -878,9 +881,9 @@ footer.title{
 }
 
 .footer_copy{
-   font-size: var(--smaller-font-size);
+   font-size: var(--small-font-size);
    text-align: center;
-   color: var(--text-color-light);
+   color: var(--text-color);
    margin-top: var(--mb-3);
 }
 
@@ -890,6 +893,44 @@ footer.title{
 .footer_social{
    color:#FFF
 }
+
+/* ===================Variables Dark Theme===================== */
+
+body.dark-theme{
+   /* HSL color mode */
+
+   --first-color-second: hsl(var(--hue-color), 30%, 8%);
+   --title-color:hsl(var(--hue-color), 8%, 95%);
+   --text-color: hsl(var(--hue-color), 8%, 75%);
+   --input-color:hsl(var(--hue-color), 29%, 16%);
+   --body-color:hsl(var(--hue-color), 28%, 12%);
+   --container-color:hsl(var(--hue-color), 29%, 16%);
+   --scroll-bar-color:hsl(var(--hue-color), 12%, 48%);
+   --scroll-thumb-color:hsl(var(--hue-color), 12%, 36%);
+
+}
+
+
+/*========================Button Dark/Light=======================*/
+.nav_btns{
+   display: flex;
+   align-items: center;
+}
+
+.change-theme{
+   font-size: 1.25rem;
+   color: var(--title-color);
+   margin-right: var(--mb-1);
+   cursor: pointer;
+}
+.change-theme:hover{
+   color: var(--first-color);
+}
+
+
+
+
+
 
 /* ===========Scroll-Up ================*/
 
@@ -923,27 +964,37 @@ footer.title{
    bottom: 5rem;
 }
 
+/* ===================================Scroll-Bar ======================================*/
 
 
+::-webkit-scrollbar{
+   width: .60rem;
+   background-color: var(--scroll-bar-color);
+   border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
 
+   background-color: var(--scroll-thumb-color);
+   border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+   background-color: var(--text-color-light);
 
+}
 
-
-
-
-
+ 
 
 /* =============Media-Quaries++++++++++++++++++++ */
 
 /* ===================For Small Devices============== */
-@media screen and(max-width: 350px) {
+@media screen and (max-width: 350px) {
 
    .container{
       margin-left: var(--mb-1);
       margin-right: var(--mb-1);
    }
    .nav_menu{
-      padding: 2rem, .25rem, 4rem;
+      padding: 2rem .25rem 4rem;
 
    }
    .nav_list{
@@ -970,50 +1021,16 @@ footer.title{
       padding-right: 3.5rem;
    }
    .services_model{
-      width: 200px;
+      padding: 0 .5rem;
    }
 
    
 }
-/* ===================Variables Dark Theme===================== */
-
-body.dark-theme{
-   /* HSL color mode */
-
-   --first-color-second: hsl(var(--hue-color), 30%, 8%);
-   --title-color:hsl(var(--hue-color), 8%, 95%);
-   --text-color: hsl(var(--hue-color), 8%, 75%);
-   --input-color:hsl(var(--hue-color), 29%, 16%);
-   --body-color:hsl(var(--hue-color), 28%, 12%);
-   --container-color:hsl(var(--hue-color), 29%, 16%);
-
-}
-
-
-/*========================Button Dark/Light=======================*/
-.nav_btns{
-   display: flex;
-   align-items: center;
-}
-
-.change-theme{
-   font-size: 1.25rem;
-   color: var(--title-color);
-   margin-right: var(--mb-1);
-   cursor: pointer;
-}
-.change-theme:hover{
-   color: var(--first-color);
-}
-
-
-
-
 
 
 /*============ For-medium devices==============  */
 
-/* @media screen and (min-width: 568px) {
+ @media screen and (min-width: 568px) {
 
    .home_content{
       grid-template-columns: max-content 1fr 1fr;
@@ -1029,10 +1046,11 @@ body.dark-theme{
    .skills_container,
    .portfolio_container,
    .contact_container,
-   .footer_container{
+   .footer_container {
       grid-template-columns: repeat(2, 1fr);
 
    }
+    
 
    .qualification_sections{
 
@@ -1041,9 +1059,9 @@ body.dark-theme{
       justify-content: center;
    }
    
-} */
+} 
 
-/* @media screen and(max-width: 768px){
+ @media screen and (min-width: 768px){
    .container{
       margin-left: auto;
       margin-right: auto;
@@ -1110,16 +1128,82 @@ body.dark-theme{
    .about_img{
       width: 350px;
    }
+   .about_description{
+      text-align: center;
+   }
+   .about_info{
+      justify-content: space-between;
+   }
+   .about_buttons{
+      justify-content: initial;
+   }
+   .qualification_tabs{
+      justify-content: center;
+   }
+   .qualificaton_button{
+      margin: 0 var(--mb-1);
 
-} */
+   }
+   .qualification_sections{
+      grid-template-columns: .5fr;
+   }
+
+   .services_container{
+      grid-template-columns: repeat(2, 318px);
+      justify-content: center;
+   }
+   .services_icon{
+      font-size: 2rem;
+   }
+   .services_content{
+      padding: 6rem 0 2rem 2.5rem;
+   }
+
+   .services_model-service{
+      width: 450px;
+
+   }
+
+   .portfolio_img{
+      width: 320px;
+   }
+   .portfolio_content{
+      display: flex;
+      align-items: center;
+   }
+   .footer_container{
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .footer_bg{
+      padding: 3rem 0 3.5rem;
+   }
 
 
+   .footer_links{
+      flex-direction: row;
+      column-gap: 2rem;
+   }
 
+   .footer_socials{
+
+      justify-self: flex-end;
+
+   }
+   .footer_copy{
+      margin-top: 4.5rem;
+   }
+
+
+} 
+
+
+ 
 
 
 /*========== For-larger devices=========== */
 
-/* @media screen and (min-width: 1024px) {
+ @media screen and (min-width: 1024px) {
 
    .header,
    .main,
@@ -1134,7 +1218,7 @@ body.dark-theme{
       transform: translateX(-6rem);
    }
    .services_container{
-      grid-template-columns: repeat(3, 238px);
+      grid-template-columns: repeat(2, 438px);
    }
    .portfolio_content{
       column-gap: 5rem;
@@ -1160,7 +1244,7 @@ body.dark-theme{
    }
 
    
-} */
+} 
 
   
 
