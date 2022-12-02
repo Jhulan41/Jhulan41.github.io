@@ -244,6 +244,19 @@
   .nav_close:hover{
    color: var(--first-color-alt);
   }
+
+
+  .about_buttons{
+   display: flex;
+   justify-content: center;
+   width: 220px;
+   height: 28px;
+   margin-left: 25px;
+  }
+
+
+
+
 /*
 
   /*----------------- Show menu---------- */
@@ -299,7 +312,7 @@
   }
 
   .home_blob-img{
-   width: 170px;
+   width: 150px;
   }
 
   .home_data{
@@ -425,11 +438,14 @@
    text-align: center;
   }
 
-  .about_buttons{
+  /* .about_buttons{
    display: flex;
    justify-content: center;
-  }
+  } */
 
+  .about_resume{
+   margin: auto;
+  }
 
 
   /* ---------------------Skills----------------------- */

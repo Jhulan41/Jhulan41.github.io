@@ -21,6 +21,13 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav_logo">Jhulan Mahato</a>
+
+
+               <div class="about_buttons">
+                            <a download="" href="assets/pdf/Jhulan_Mahato_Resume.pdf" class="button button-flex">
+                                Download Resume<i class="uil uil-download-alt button_icon"></i>
+                            </a>
+                        </div>         
              
 
             <div class="nav_menu show-menu" id="nav_menu">
@@ -101,7 +108,7 @@
                 </div>
                 <div class="home_img">
                     <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
+                        <!-- <mask id="mask0" mask-type="alpha">
                             <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                             130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                             97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
@@ -113,9 +120,11 @@
                             129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                             -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                             
-                            
-                            <image class="home_blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"/>
-                        </g>
+                            //image
+                               </g> -->
+
+                               <image class="home_blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"/>
+                     
                     </svg>
                     
                  </div>
@@ -133,13 +142,14 @@
                 </div>
             </div>
 
-            <div class="home_scroll">
+            <!-- <div class="home_scroll">
                 <a href="#about" class="home_scroll-button button-flex">
                     <i class="uil uil-mouse-alt home_scroll-mouse"></i>
                     <span class="home_scroll-name">Scroll down</span>
                     <i class="uil uil-arrow-down home_scroll-arrow"></i>
                 </a>
-            </div>
+            </div> -->
+
                 
         </div>
 
@@ -151,8 +161,8 @@
             <h2 class="section_title">About Me</h2>
             <span class="section_subtitle">My Introduction</span>
 
-            <div class="about_container container grid">
-                <img src="assets/img/about2.jpeg" alt="" class="about_img">
+            <div class="about_container container ">
+                <!-- <img src="assets/img/about2.jpeg" alt="" class="about_img"> -->
 
                 <div class="about_data">
                     <p class="about_description">Web developer, with extensive knowledge and hands 
@@ -175,12 +185,13 @@
                             </div>
                         </div>
 
-                        <div class="about_buttons">
-                            <a download="" href="assets/pdf/Jhulan_Mahato_Resume.pdf" class="button button-flex">
-                                Download Resume<i class="uil uil-download-alt button_icon"></i>
-                            </a>
-                        </div>         
+                              
                 </div>
+                <div class="about_buttons about_resume">
+                    <a download="" href="https://drive.google.com/file/d/1iwgj5I1jxECj5F2P9yF-dlop21qAcsL3/view?usp=sharing" target="_blank" class="button button-flex">
+                        Download Resume<i class="uil uil-download-alt button_icon"></i>
+                    </a>
+                </div>  
            </div>
         </section>
 
@@ -189,6 +200,7 @@
         <section class="skills section" id="skills">
             <h2 class="section_title">Skills</h2>
             <span class="section_subtitle">My technical level</span>
+           
 
             <div class="skills_container container grid">
                 
@@ -207,7 +219,9 @@
                         <div class="skills_list grid">
                             <div class="skills_data">
                                 <div class="skills_titles">
+                                    <iconify-icon icon="logos:html-5" class="skills_icon"></iconify-icon>
                                     <h3 class="skills_name">HTML</h3>
+                                   
                                     <span class="skills_number">90%</span>
                                 </div>
                                 <div class="skills_bar">
@@ -216,6 +230,7 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
+                                    <iconify-icon icon="logos:css-3" class="skills_icon"></iconify-icon>
                                     <h3 class="skills_name">CSS</h3>
                                     <span class="skills_number">70%</span>
                                 </div>
@@ -225,6 +240,7 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
+                                    <iconify-icon icon="vscode-icons:file-type-js-official" class="skills_icon"></iconify-icon>
                                     <h3 class="skills_name">JavaScript</h3>
                                     <span class="skills_number">85%</span>
                                 </div>
@@ -252,6 +268,7 @@
                         <div class="skills_list grid">
                             <div class="skills_data">
                                 <div class="skills_titles">
+                                    <iconify-icon icon="logos:java" class="skills_icon"></iconify-icon>
                                     <h3 class="skills_name">JAVA</h3>
                                     <span class="skills_number">60%</span>
                                 </div>
@@ -261,16 +278,19 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
+                                    <iconify-icon icon="logos:spring-icon" class="skills_icon"></iconify-icon>
                                     <h3 class="skills_name">Spring boot</h3>
                                     <span class="skills_number">80%</span>
                                 </div>
                                 <div class="skills_bar">
+
                                     <span class="skills_percentage skills_sb"></span>
                                 </div>
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">MYSQL</h3>
+                                    <iconify-icon icon="logos:mysql" class="skills_icon"></iconify-icon>
+                                    <h3 class="skills_name">MySQL</h3>
                                     <span class="skills_number">90%</span>
                                 </div>
                                 <div class="skills_bar">
@@ -279,6 +299,7 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
+                                    <iconify-icon icon="logos:hibernate" class="skills_icon"></iconify-icon>
                                     <h3 class="skills_name">Hibernate</h3>
                                     <span class="skills_number">60%</span>
                                 </div>
@@ -296,181 +317,7 @@
         <!-- ==========================Qualification===================================== -->
 
 
-        <section class="qulification section">
-
-            <h2 class="section_title">Qualification</h2>
-            <span class="section_subtitle">My personal journey</span>
-
-            <div class="qualification_container container">
-                <div class="qualification_tabs">
-                    <div class="qualificaton_button button-flex qualification_active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification_icon"></i>
-                        Education
-                    </div>
-                    <div class="qualificaton_button button-flex" data-target="#projects">
-                        <i class="uil uil-briefcase-alt qualification_icon"></i>
-                        Projects
-                    </div>
-                </div>
-
-                <div class="qualification_sections">
-                    <!-- ==================QUALIFICATION CONTENT 1================ -->
-                    <div class="qualification_content qualification_active" data-content id="education">
-                    <!-- ==================QUALIFICATION 1================ -->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Matriculation</h3>
-                                <span class="qualification_subtitle">G.B.H.S - Narayanpur</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2009 - 2010
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                        </div>
-                           <!-- ==================QUALIFICATION 2================ -->
-                           <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">Intermediate of Science</h3>
-                                <span class="qualification_subtitle">Kolhan - University</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2011 - 2012
-                                </div>
-                            </div>
-                           
-
-                        </div>
-                           <!-- ==================QUALIFICATION 3================ -->
-                           <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Electronics Engineering</h3>
-                                <span class="qualification_subtitle">ABIT - Cuttack</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2012 - 2016
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                        </div>
-                           <!-- ==================QUALIFICATION 4================ -->
-                           <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <!-- <span class="qualifiction_line"></span> -->
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">Web Development</h3>
-                                <span class="qualification_subtitle">MASAI - School</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2022
-                                </div>
-                            </div>
-                            
-
-                        </div>
-
-                    </div>    
-                    
-                     <!-- ==================QUALIFICATION CONTENT 2================ -->
-                     <div class="qualification_content" data-content id="projects">
-                        <!-- ==================QUALIFICATION 1================ -->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Fundamental.in</h3>
-                                    <span class="qualification_subtitle">unit-2</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        March - 2022
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qulification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-    
-                            </div>
-                               <!-- ==================QUALIFICATION 2================ -->
-                               <div class="qualification_data">
-                                <div></div>
-    
-                                <div>
-                                    <span class="qulification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-    
-                                <div>
-                                    <h3 class="qualification_title">BathandBodyworks</h3>
-                                    <span class="qualification_subtitle">unit-3</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        April - 2022
-                                    </div>
-                                </div>
-                               
-    
-                            </div>
-                               <!-- ==================QUALIFICATION 3================ -->
-                               <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Sugercosmetics</h3>
-                                    <span class="qualification_subtitle">Individual - project</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        May - 2022
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qulification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-    
-                            </div>
-                               <!-- ==================QUALIFICATION 4================ -->
-                               <div class="qualification_data">
-                                <div></div>
-    
-                                <div>
-                                    <span class="qulification_rounder"></span>
-                                    <!-- <span class="qualifiction_line"></span> -->
-                                </div>
-    
-                                <div>
-                                    <h3 class="qualification_title">Calendly Clone</h3>
-                                    <span class="qualification_subtitle">Group - Projects</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        June - 2022
-                                    </div>
-                                </div>
-                                
-    
-                            </div>
-    
-                        </div> 
-
-                </div>
-            </div>
-        </section>
+        
 <!-- ============================Services================= -->
         <section class="services section" id="services">
             <h2 class="section_title">Services</h2>
@@ -604,7 +451,7 @@
 <!-- =========================Portfolio===================================== -->
 
         <section class="portfolio section" id="portfolio">
-            <h2 class="section_title">Portfolio</h2>
+            <h2 class="section_title">Projects</h2>
             <span class="section_subtitle">My Important works</span>
 
             <div class="portfolio_container container swiper-container">
@@ -616,12 +463,17 @@
                         <img src="assets/img/portfolio1.png" alt="" class="portfolio_img">
                     
                         <div class="portfolio_data">
-                            <h3 class="portfolio_title">Modern Website</h3>
-                            <p class="portfolio_description">Website adaptable to all devices, with UI components
-                                and animated interections.
+                            <h3 class="portfolio_title">Fundamental.in(clone)</h3>
+                            <p class="portfolio_description">Fundamental Electronics Pvt.Ltd. is an online store where it provides the customer with the best brands, products and services at the best price possible.
                             </p>
+                            <h4> HTML | CSS | JavaScript | BootStrap</h4>
+                            <!-- <p> HTML | CSS | JavaScript | BootStrap </p> -->
                             <a href="https://vishalbhuse.github.io/Fundamental.in/index.html" class="button button-flex button-small portfolio_button">
                                 Demo
+                                <i class="uil uil-angle-right button_icon"></i>
+                            </a>
+                            <a href="https://github.com/VishalBhuse/Fundamental.in" class="button button-flex button-small portfolio_button">
+                                Github
                                 <i class="uil uil-angle-right button_icon"></i>
                             </a>
                         </div>
@@ -633,11 +485,16 @@
                         <img src="assets/img/portfolio2.jpg" alt="" class="portfolio_img">
                     
                         <div class="portfolio_data">
-                            <h3 class="portfolio_title">Modern Website</h3>
-                            <p class="portfolio_description">Website adaptable to all devices, with UI components
-                                and animated interections.</p>
+                            <h3 class="portfolio_title">Bath-and-body-works(Clone)</h3>
+                            <p class="portfolio_description">This is the clone of the website Bath & Body Works which we have done collabratively during our Unit 3 construct week at Masai</p>
+                            
+                            <h4> HTML | CSS | JavaScript</h4>
                             <a href="https://iakashmondal.github.io/bath-and-body-works-2/" class="button button-flex button-small portfolio_button">
                                 Demo
+                                <i class="uil uil-angle-right button_icon"></i>
+                            </a>
+                            <a href="https://github.com/IAkashMondal/bath-and-body-works-2" class="button button-flex button-small portfolio_button">
+                                Github
                                 <i class="uil uil-angle-right button_icon"></i>
                             </a>
                         </div>
@@ -646,14 +503,18 @@
                   <!-- =========================portfolio-3==================== -->
                 
                   <div class="portfolio_content grid swiper-slide">
-                    <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_img">
+                    <img src="https://zestechinc.com/wp-content/uploads/2017/02/registration.jpg" alt="" class="portfolio_img">
                 
                     <div class="portfolio_data">
-                        <h3 class="portfolio_title">Modern Website</h3>
-                        <p class="portfolio_description">Website adaptable to all devices, with UI components
-                            and animated interections.</p>
-                        <a href="" class="button button-flex button-small portfolio_button">
-                            Demo
+                        <h3 class="portfolio_title">Automated Student Registration System</h3>
+                        <p class="portfolio_description">It is a java backend project built using JDBC API.</p>
+                        <h4> JAVA | MySQL</h4>
+                        <a href="https://github.com/Jhulan41/Student-Management-system" class="button button-flex button-small portfolio_button">
+                            Github
+                            <i class="uil uil-angle-right button_icon"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1XkFnJxDWO3WIaURKxk7JudUNccsaSB4W/view?usp=sharing" class="button button-flex button-small portfolio_button">
+                            Explanation
                             <i class="uil uil-angle-right button_icon"></i>
                         </a>
                     </div>
@@ -800,6 +661,8 @@
     <!--=====================Swiper- JS===================--> 
 
     <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
     <!-- =====================================script==================================== -->
      <script src="./Script/script.js"></script>
