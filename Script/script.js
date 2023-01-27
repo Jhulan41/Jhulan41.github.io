@@ -1,4 +1,15 @@
 
+let resume1=document.getElementById("res1")
+resume1.addEventListener('click', function(){
+
+    window.open("https://drive.google.com/file/d/1iwgj5I1jxECj5F2P9yF-dlop21qAcsL3/view?usp=sharing");
+    
+})
+
+
+
+
+
 // menu show and hide   
 
 const navMenu = document.getElementById("nav_menu");
